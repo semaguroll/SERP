@@ -1,0 +1,1870 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Google.Ads.Gax</name>
+    </assembly>
+    <members>
+        <member name="T:Google.Ads.Gax.Config.AdsConfig">
+            <summary>
+            This class reads the configuration keys from App.config.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.DEFAULT_USER_ID">
+            <summary>
+            The default user ID when creating a <see cref="T:Google.Apis.Auth.OAuth2.Flows.GoogleAuthorizationCodeFlow"/> instance.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.DEFAULT_TIMEOUT">
+            <summary>
+            The default timeout for API calls in milliseconds (1 hour).
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.DEFAULT_MAX_RECEIVE_MESSAGE_LENGTH_IN_BYTES">
+            <summary>
+            Default value of the maximum size in bytes of the message that can be received by the
+            service client (64 MB).
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.DEFAULT_MAX_METADATA_SIZE_IN_BYTES">
+            <summary>
+            Default value for the maximum size in bytes of the metadata that can be received by the
+            service client (16 MB).
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.oAuth2ClientId">
+            <summary>
+            OAuth2 client ID.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.oAuth2ClientSecret">
+            <summary>
+            OAuth2 client secret.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.oAuth2RefreshToken">
+            <summary>
+            OAuth2 refresh token.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.oAuth2PrnEmail">
+            <summary>
+            OAuth2 prn email.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.oAuth2ServiceAccountEmail">
+            <summary>
+            OAuth2 service account email loaded from secrets JSON file.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.oAuth2PrivateKey">
+            <summary>
+            OAuth2 private key loaded from secrets JSON file.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.oAuth2SecretsJsonPath">
+            <summary>
+            OAuth2 secrets JSON file path.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.oAuth2Mode">
+            <summary>
+            OAuth2 mode.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.oAuth2Scope">
+            <summary>
+            OAuth2 scope.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.authorizationMethod">
+            <summary>
+            Authorization method.
+            </summary>
+            <remarks>
+            This setting is only for testing purposes.
+            </remarks>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.enableProfiling">
+            <summary>
+            A flag to determine whether or not to enable profiling.
+            </summary>
+            <remarks>
+            This setting is only for testing purposes.
+            </remarks>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.useChannelCache">
+            <summary>
+            A flag to determine whether or not to use channel caching.
+            </summary>
+            <remarks>
+            This setting may be used to disable channel caching in advanced use cases
+            where the library's default credential management is manually overridden.
+            </remarks>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.maxReceiveMessageLengthInBytes">
+            <summary>
+            The maximum message length in bytes that the client library can receive (64 MB).
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.maxMetadataSizeInBytes">
+            <summary>
+            The maximum size in bytes of the metadata that can be received by the
+            service client.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.proxy">
+            <summary>
+            Web proxy to be used with the services.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.timeout">
+            <summary>
+            The timeout for individual API calls.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.libraryIdentifierOverride">
+            <summary>
+            The library identifier override.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.ENV_VAR_TO_CONFIG_KEY_MAP">
+            <summary>
+            A map between the environment variable key names and configuration key names.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.Timeout">
+            <summary>
+            Gets or sets the timeout for individual API calls.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.MaxReceiveMessageSizeInBytes">
+            <summary>
+            Gets or sets the maximum size in bytes of the message that can be received by the
+            service client.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.MaxMetadataSizeInBytes">
+            <summary>
+            Gets or sets the maximum size in bytes of the metadata that can be received by the
+            service client.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.Proxy">
+            <summary>
+            Gets or sets the web proxy to be used with the services.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.LibraryIdentifierOverride">
+            <summary>
+            Gets or sets the library identifier override.
+            </summary>
+            <value>
+            The library identifier override.
+            </value>
+            <remarks>This setting is only for testing purposes.</remarks>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.OAuth2ClientId">
+            <summary>
+            Gets or sets the OAuth2 client ID.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.OAuth2ClientSecret">
+            <summary>
+            Gets or sets the OAuth2 client secret.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.OAuth2AccessToken">
+            <summary>
+            Gets or sets the OAuth2 access token.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.OAuth2RefreshToken">
+            <summary>
+            Gets or sets the OAuth2 refresh token.
+            </summary>
+            <remarks>This setting is applicable only when using OAuth2 web / application
+            flow in offline mode.</remarks>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.OAuth2Mode">
+            <summary>
+            Gets or sets the OAuth2 mode.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.AuthorizationMethod">
+            <summary>
+            Gets or sets the authorization method.
+            </summary>
+            <remarks>This setting is only for testing purposes.</remarks>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.EnableProfiling">
+            <summary>
+            A flag to determine whether or not to turn on profiling in the client library.
+            </summary>
+            <remarks>This setting is only for testing purposes.</remarks>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.UseChannelCache">
+            <summary>
+            A flag to determine whether or not to enable channel cache in the client library.
+            </summary>
+            <remarks>
+            This setting may be used to disable channel caching in advanced use cases
+            where the library's default credential management is manually overridden.
+            </remarks>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.OAuth2PrnEmail">
+            <summary>
+            Gets or sets the OAuth2 prn email.
+            </summary>
+            <remarks>This setting is applicable only when using OAuth2 service accounts.
+            </remarks>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.OAuth2ServiceAccountEmail">
+            <summary>
+            Gets the OAuth2 service account email.
+            </summary>
+            <remarks>
+            This setting is applicable only when using OAuth2 service accounts.
+            This setting is read directly from the file referred to in
+            <see cref="P:Google.Ads.Gax.Config.AdsConfig.OAuth2SecretsJsonPath"/> setting.
+            </remarks>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.OAuth2PrivateKey">
+            <summary>
+            Gets the OAuth2 private key for service account flow.
+            </summary>
+            <remarks>
+            This setting is applicable only when using OAuth2 service accounts.
+            This setting is read directly from the file referred to in
+            <see cref="P:Google.Ads.Gax.Config.AdsConfig.OAuth2SecretsJsonPath"/> setting.
+            </remarks>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.OAuth2SecretsJsonPath">
+            <summary>
+            Gets or sets the OAuth2 secrets JSON file path.
+            </summary>
+            <remarks>
+            This setting is applicable only when using OAuth2 service accounts.
+            </remarks>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.OAuth2Scope">
+            <summary>
+            Gets or sets the OAuth2 scope. This is a comma separated string of
+            all the scopes you want to use. This property has the default value
+            <code>https://www.googleapis.com/auth/adwords</code>
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.AdsConfig.#ctor">
+            <summary>
+            Public constructor.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.AdsConfig.#ctor(Microsoft.Extensions.Configuration.IConfigurationRoot)">
+            <summary>
+            Public constructor. Loads the configuration from an <see cref="T:Microsoft.Extensions.Configuration.IConfigurationRoot"/>.
+            </summary>
+            <param name="configurationRoot">The configuration root.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.AdsConfig.#ctor(Microsoft.Extensions.Configuration.IConfigurationSection)">
+            <summary>
+            Public constructor. Loads the configuration from a <see cref="T:Microsoft.Extensions.Configuration.IConfigurationSection"/>.
+            </summary>
+            <param name="configurationSection">The configuration section.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.AdsConfig.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Config.AdsConfig"/> class.
+            </summary>
+            <param name="settings">The settings.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.AdsConfig.ReadSettings(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Read all settings from App.config.
+            </summary>
+            <param name="settings">The parsed App.config settings.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.AdsConfig.LoadFromEnvironmentVariables">
+            <summary>
+            Loads the configuration from environment variables.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.AdsConfig.ReadProxySettings(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Reads the proxy settings.
+            </summary>
+            <param name="settings">The parsed app.config settings.</param>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AdsConfig.credential">
+            <summary>
+            The credential object that was created from settings.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.AdsConfig.Credentials">
+            <summary>
+            Gets the credentials.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.AdsConfig.CreateCredentials">
+            <summary>
+            Creates a credentials object from settings.
+            </summary>
+            <returns>The configuration settings.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.AdsConfig.LoadOAuth2SecretsFromFile">
+            <summary>
+            Loads the OAuth2 private key and service account email settings from the
+            secrets JSON file.
+            </summary>
+        </member>
+        <member name="T:Google.Ads.Gax.Config.AuthorizationMethod">
+            <summary>
+            The type of authentication to use.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AuthorizationMethod.Insecure">
+            <summary>
+            Insecure credentials.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.AuthorizationMethod.OAuth">
+            <summary>
+            OAuth2 credentials.
+            </summary>
+        </member>
+        <member name="T:Google.Ads.Gax.Config.ConfigBase">
+            <summary>
+            This class reads the configuration keys from App.config.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.ConfigBase.#ctor">
+            <summary>
+            The default constructor.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.ConfigBase.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Config.ConfigBase" /> class.
+            </summary>
+            <param name="settings">The settings.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.ConfigBase.#ctor(Microsoft.Extensions.Configuration.IConfigurationRoot)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Config.ConfigBase"/> class.
+            </summary>
+            <param name="configurationRoot">The configuration root.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.ConfigBase.#ctor(Microsoft.Extensions.Configuration.IConfigurationSection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Config.ConfigBase"/> class.
+            </summary>
+            <param name="configurationSection">The configuration section.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.ConfigBase.LoadFromConfiguration(Microsoft.Extensions.Configuration.IConfiguration,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Config.ConfigBase"/> class.
+            </summary>
+            <param name="configuration">The configuration section.</param>
+            <param name="sectionName"></param>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.ConfigBase.LoadFromAppConfigSection(System.String)">
+            <summary>
+            Attempts to load the configuration section with the given name.
+            </summary>
+            <param name="sectionName">The name of the configuration section to load.</param>
+            <returns>
+            The request configuration section, or <code>null</code> if none was found.
+            </returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.ConfigBase.TryLoadFromEnvironmentFilePath(System.String,System.String)">
+            <summary>
+            Loads configuration from a file path pointed to by a specified environment variable.
+            </summary>
+            <param name="environmentVariableName">Name of the environment variable to use.</param>
+            <param name="sectionName">Name of the section.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.ConfigBase.LoadFromSettingsJson(System.String,System.String)">
+            <summary>
+            Loads the configuration from settings json.
+            </summary>
+            <param name="filePath">The file path.</param>
+            <param name="sectionName">Name of the section.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.ConfigBase.ReadAppConfigSection(System.String)">
+            <summary>
+            Reads the application configuration section.
+            </summary>
+            <param name="sectionName">Name of the section.</param>
+            <returns>A dictionary with key as configuration keyname and value as configuration
+            value.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.ConfigBase.ToDictionary(Microsoft.Extensions.Configuration.IConfiguration,System.String)">
+            <summary>
+            Converts a configuration section into a dictionary. Section name prefix is stripped
+            from the key names.
+            </summary>
+            <param name="configuration">The configuration section.</param>
+            <param name="sectionName">Name of the section.</param>
+            <returns>A dictionary with key as configuration keyname and value as configuration
+            value.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.ConfigBase.ReadSettings(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Read all settings from App.config.
+            </summary>
+            <param name="settings">The parsed app.config settings.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.ConfigBase.ReadSetting(System.Collections.Generic.Dictionary{System.String,System.String},Google.Ads.Gax.Config.ConfigSetting)">
+            <summary>
+            Reads a setting from a given dictionary.
+            </summary>
+            <param name="settings">The settings collection from which the keys
+            are to be read.</param>
+            <param name="settingField">The field that holds the setting value.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.ConfigBase.SetPropertyAndNotify``1(Google.Ads.Gax.Config.ConfigSetting{``0},``0,System.String)">
+            <summary>
+            Sets the specified property and notify any listeners.
+            </summary>
+            <typeparam name="SettingType">Type of the property.</typeparam>
+            <param name="field">The field that store property value.</param>
+            <param name="newValue">The new value to be set.</param>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="E:Google.Ads.Gax.Config.ConfigBase.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.ConfigBase.Clone">
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+            <returns>
+            A new object that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="T:Google.Ads.Gax.Config.ConfigSetting">
+            <summary>
+            A config setting, to be used with <see cref="T:Google.Ads.Gax.Config.ConfigBase"/> and derived classes.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.ConfigSetting.Name">
+            <summary>
+            Gets the name of the setting.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.ConfigSetting.TryParse(System.String)">
+            <summary>
+            Tries to parse a value.
+            </summary>
+            <param name="valueText">The value text.</param>
+        </member>
+        <member name="T:Google.Ads.Gax.Config.ConfigSetting`1">
+            <summary>
+            A config setting of a specified type, to be used with <see cref="T:Google.Ads.Gax.Config.ConfigBase"/>
+            and derived classes.
+            </summary>
+            <typeparam name="SettingType">The type of the setting.</typeparam>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.ConfigSetting`1.Value">
+            <summary>
+            Gets or sets the value of the setting.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Config.ConfigSetting`1.DefaultValue">
+            <summary>
+            Gets the default value of the setting.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.ConfigSetting`1.#ctor(System.String,`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Config.ConfigSetting`1"/> class.
+            </summary>
+            <param name="name">Name of the setting.</param>
+            <param name="defaultValue">The default value.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.ConfigSetting`1.TryParse(System.String)">
+            <summary>
+            Tries to parse a value.
+            </summary>
+            <param name="valueText">The value text.</param>
+        </member>
+        <member name="T:Google.Ads.Gax.Config.StringConfigSetting">
+            <summary>
+            A specialized config setting class for string type so parsing can be skipped.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.StringConfigSetting.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Config.StringConfigSetting"/> class.
+            </summary>
+            <param name="name">Name of the setting.</param>
+            <param name="defaultValue">The default value.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Config.StringConfigSetting.TryParse(System.String)">
+            <summary>
+            Tries to parse a value.
+            </summary>
+            <param name="valueText">The value text.</param>
+        </member>
+        <member name="T:Google.Ads.Gax.Config.OAuth2Flow">
+            <summary>
+            The type of OAuth2 flow.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.OAuth2Flow.APPLICATION">
+            <summary>
+            Web and installed application flows.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Config.OAuth2Flow.SERVICE_ACCOUNT">
+            <summary>
+            Service account flow.
+            </summary>
+        </member>
+        <member name="T:Google.Ads.Gax.ErrorMessages">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.ErrorMessages.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.ErrorMessages.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.ErrorMessages.ClientEmailIsMissingInJsonFile">
+            <summary>
+              Looks up a localized string similar to Required key &apos;client_email&apos; is missing in JSON secrets file..
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.ErrorMessages.ConfigSettingParseError">
+            <summary>
+              Looks up a localized string similar to Failed to parse value for setting name &apos;{0}&apos;. Value provided: &apos;{1}&apos;..
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.ErrorMessages.FailedToLoadJsonSecretsFile">
+            <summary>
+              Looks up a localized string similar to Failed to load JSON secrets file for service account configuration. See inner exception for details..
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.ErrorMessages.PrivateKeyIsMissingInJsonFile">
+            <summary>
+              Looks up a localized string similar to Required key &apos;private_key&apos; is missing in JSON secrets file..
+            </summary>
+        </member>
+        <member name="T:Google.Ads.Gax.Interceptors.StreamingRpcInterceptor`1">
+            <summary>
+            An <see cref="T:Grpc.Core.IAsyncStreamReader`1" /> class for intecepting streaming
+            requests.
+            </summary>
+            <typeparam name="TResponse">The type of the response.</typeparam>
+            <seealso cref="T:Grpc.Core.IAsyncStreamReader`1" />
+        </member>
+        <member name="F:Google.Ads.Gax.Interceptors.StreamingRpcInterceptor`1.innerStreamReader">
+            <summary>
+            The stream reader that this instance wraps over.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Interceptors.StreamingRpcInterceptor`1.onMoveNext">
+            <summary>
+            The callback to be invoked when MoveNext() is called.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Interceptors.StreamingRpcInterceptor`1.#ctor(Grpc.Core.IAsyncStreamReader{`0},System.Action{`0,System.AggregateException})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Interceptors.StreamingRpcInterceptor`1"/> class.
+            </summary>
+            <param name="streamReader">The stream reader to wrap over..</param>
+            <param name="moveNextCallback">The callback to be invoked when MoveNext() is
+            called.</param>
+        </member>
+        <member name="P:Google.Ads.Gax.Interceptors.StreamingRpcInterceptor`1.Current">
+            <summary>
+            Gets the current item in the stream.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Interceptors.StreamingRpcInterceptor`1.MoveNext(System.Threading.CancellationToken)">
+            <summary>
+            Moves to the next item in the stream.
+            </summary>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>A task that can be waited upon to complete this operation.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Interceptors.StreamingRpcInterceptor`1.Dispose">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+        </member>
+        <member name="T:Google.Ads.Gax.Interceptors.UnaryRpcInterceptor">
+            <summary>
+            This class provides functionality to intercept tasks and callbacks, and performs custom
+            exception handling.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Interceptors.UnaryRpcInterceptor.Intercept``1(Grpc.Core.AsyncUnaryCall{``0})">
+            <summary>
+            Intercepts an async unary call adds a custom exception handler.
+            </summary>
+            <typeparam name="TResponse">The type of the response.</typeparam>
+            <param name="call">The async unary call to intercept.</param>
+            <returns>The async unary call with custom exception handling for
+            <see cref="T:Grpc.Core.RpcException"/>.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Interceptors.UnaryRpcInterceptor.Intercept``2(System.Threading.Tasks.Task{``0})">
+            <summary>
+            Intercepts a task and adds a custom exception handler.
+            </summary>
+            <typeparam name="T">The task result type</typeparam>
+            <typeparam name="TResponse">The response type.</typeparam>
+            <param name="task">The task to be intercepted.</param>
+            <returns>The intercepted task with custom exception handling for
+            <see cref="T:Grpc.Core.RpcException"/>.</returns>
+            <exception cref="T:Google.Ads.Gax.Lib.AdsBaseException">Thrown if the intercepted
+            <see cref="T:Grpc.Core.RpcException"/> can be parsed.</exception>
+        </member>
+        <member name="M:Google.Ads.Gax.Interceptors.UnaryRpcInterceptor.Intercept``2(System.Func{``0})">
+            <summary>
+            Intercepts a function delegate and adds a custom exception handler.
+            </summary>
+            <typeparam name="T">The return type of the function delegate.</typeparam>
+            <typeparam name="TResponse">The response type.</typeparam>
+            <param name="function">The function delegate to intercept.</param>
+            <returns>The intercepted function delegate with custom exception handling for
+            <see cref="T:Grpc.Core.RpcException"/></returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Interceptors.UnaryRpcInterceptor.Intercept``1(System.Action)">
+            <summary>
+            Intercepts an action delegate and adds custom exception handling.
+            </summary>
+            <typeparam name="TResponse">The response type.</typeparam>
+            <param name="action">The action delegate to intercept.</param>
+            <returns>The intercepted action delegate, with custom exception handling for
+            <see cref="T:Grpc.Core.RpcException"/></returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Interceptors.UnaryRpcInterceptor.ParseTaskException``1(System.AggregateException)">
+            <summary>
+            Parses the task exception.
+            </summary>
+            <param name="e">The <see cref="T:System.AggregateException"/> to parse.</param>
+            <returns>The parsed <see cref="T:Google.Ads.Gax.Lib.AdsBaseException"/> if parsing is successful;
+            The underlying <see cref="T:Grpc.Core.RpcException" /> if the exception cannot be parsed as a
+            AdsBaseException.</returns>
+            <remarks><code>AggregateException</code> is very close to a catch-all exception for
+            Tasks. While all the situations that we know of involves this exception being thrown
+            by an underlying <code>RpcException</code>, theoretically this method may return a
+            null object, if the <code>AggregateException</code> is not caused by an
+            <code>RpcException</code>. That would typically indicate an underlying issue with
+            the code.</remarks>
+        </member>
+        <member name="M:Google.Ads.Gax.Interceptors.UnaryRpcInterceptor.ParseRpcException``1(Grpc.Core.RpcException)">
+            <summary>
+            Parses the RPC exception into a <see cref="T:Google.Ads.Gax.Lib.AdsBaseException" />.
+            </summary>
+            <param name="rpcException">The RPC exception.</param>
+            <returns>The parsed exception, or a null if the parsing cannot be done.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Interceptors.UnaryRpcInterceptor.FindAdsExceptionType``1(Grpc.Core.RpcException)">
+            <summary>
+            Finds the type of the ads exception that matches <paramref name="rpcException"/>.
+            </summary>
+            <typeparam name="TResponse">The type of the response.</typeparam>
+            <param name="rpcException">The RPC exception.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Interceptors.UnaryRpcInterceptor.ExtractRpcException(System.AggregateException)">
+            <summary>
+            Extracts the RPC exception from an <see cref="T:System.AggregateException"/>.
+            </summary>
+            <param name="aggregateException">The aggregate exception.</param>
+            <returns>the extracted <see cref="T:Grpc.Core.RpcException"/>, or null if an exception
+            cannot be extracted.</returns>
+        </member>
+        <member name="T:Google.Ads.Gax.Lib.AdsBaseException">
+            <summary>
+            Base class for all ads exceptions.
+            </summary>
+            <seealso cref="T:Grpc.Core.RpcException" />
+        </member>
+        <member name="P:Google.Ads.Gax.Lib.AdsBaseException.RequestId">
+            <summary>
+            Gets the request ID.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Lib.AdsBaseException.#ctor(Grpc.Core.Status,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Lib.AdsBaseException`1"/> class.
+            </summary>
+            <param name="status">Resulting status of a call.</param>
+            <param name="message">The exception message.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Lib.AdsBaseException.#ctor(Grpc.Core.Status,Grpc.Core.Metadata)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Lib.AdsBaseException`1"/> class.
+            </summary>
+            <param name="status">Resulting status of a call.</param>
+            <param name="trailers">Response trailing metadata.</param>
+        </member>
+        <member name="T:Google.Ads.Gax.Lib.AdsBaseException`1">
+             <summary>
+            
+             </summary>
+             <typeparam name="T"></typeparam>
+             <seealso cref="T:Grpc.Core.RpcException" />
+        </member>
+        <member name="P:Google.Ads.Gax.Lib.AdsBaseException`1.Failure">
+            <summary>
+            Gets the Google Ads failure details.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Lib.AdsBaseException`1.FailureKey">
+            <summary>
+            Gets the failure key.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Lib.AdsBaseException`1.#ctor(Grpc.Core.Status,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Lib.AdsBaseException`1"/> class.
+            </summary>
+            <param name="status">Resulting status of a call.</param>
+            <param name="message">The exception message.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Lib.AdsBaseException`1.#ctor(Grpc.Core.Status,Grpc.Core.Metadata)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Lib.AdsBaseException`1"/> class.
+            </summary>
+            <param name="status">Resulting status of a call.</param>
+            <param name="trailers">Response trailing metadata.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Lib.AdsBaseException`1.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="T:Google.Ads.Gax.Lib.AdsClient`1">
+            <summary>
+            A client for creating Ads API services.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Lib.AdsClient`1.Config">
+            <summary>
+            The client configuration.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Lib.AdsClient`1.#ctor(`0)">
+            <summary>
+            Initializes a new instance of the <code>AdsClient</code> class.
+            </summary>
+            <param name="config">The client configuration.</param>
+        </member>
+        <member name="P:Google.Ads.Gax.Lib.AdsClient`1.OnResponseMetadataReceived">
+            <summary>
+            Gets or sets the event handler that will be triggered when a response metadata is
+            received.
+            </summary>
+        </member>
+        <member name="T:Google.Ads.Gax.Lib.AdsResponseMetadata">
+            <summary>
+            Metadata contained in a Google Ads API call response.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Lib.AdsResponseMetadata.RequestIdKey">
+            <summary>
+            The metadata key name for request ID.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Lib.AdsResponseMetadata.RequestId">
+            <summary>
+            Gets the request ID.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Lib.AdsResponseMetadata.#ctor(Grpc.Core.Metadata)">
+            <summary>
+            Creates a new instance with metadata.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Lib.AdsResponseMetadata.#ctor(Google.Ads.Gax.Lib.IResponseMetadata)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Lib.AdsResponseMetadata"/> class.
+            </summary>
+            <param name="metadata">The metadata.</param>
+        </member>
+        <member name="T:Google.Ads.Gax.Lib.AdsServiceClientBase`1">
+            <summary>
+            A base class for all Ads services.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Lib.AdsServiceClientBase`1.disposed">
+            <summary>
+            Keeps track of whether this object is disposed.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Lib.AdsServiceClientBase`1.disposeLock">
+            <summary>
+            A variable to use for locks when disposing this object.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Lib.AdsServiceClientBase`1.ServiceContext">
+            <summary>
+            Gets the service context.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Lib.AdsServiceClientBase`1.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting
+            unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Lib.AdsServiceClientBase`1.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources;
+            <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Lib.AdsServiceClientBase`1.Finalize">
+            <summary>
+            Finalizes an instance of the <see cref="T:Google.Ads.Gax.Lib.AdsServiceClientBase`1"/> class.
+            </summary>
+        </member>
+        <member name="T:Google.Ads.Gax.Lib.AdsServiceClientFactory">
+            <summary>
+            Factory class for various Ads services.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Lib.AdsServiceClientFactory.CreateServiceSettings``2(Google.Ads.Gax.Lib.AdsServiceContext{``1})">
+            <summary>
+            Creates the service settings.
+            </summary>
+            <typeparam name="TServiceSetting">The type of the service setting.</typeparam>
+            <typeparam name="TConfig">The type of the config.</typeparam>
+            <param name="serviceContext">The service context.</param>
+            <returns>A service setting object, to be used for creating the service.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Lib.AdsServiceClientFactory.SetAllPropertySettings``2(``0,``1)">
+            <summary>
+            Sets all property settings of a given type with a given value.
+            </summary>
+            <typeparam name="TServiceSetting">The type of the service setting.</typeparam>
+            <typeparam name="TPropertyType">The type of the property to be scanned for.</typeparam>
+            <param name="serviceSettings">The service settings object whose properties should be
+            set.</param>
+            <param name="propertyValue">The property value to be set.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Lib.AdsServiceClientFactory.Create``3(Google.Ads.Gax.Lib.ServiceTemplate{``0,``1,``2},Grpc.Core.CallInvoker,Google.Api.Gax.Grpc.ServiceSettingsBase)">
+            <summary>
+            Creates the specified service.
+            </summary>
+            <typeparam name="TService">The service type.</typeparam>
+            <typeparam name="TServiceSetting">The service setting type.</typeparam>
+            <typeparam name="TConfig">The config type.</typeparam>
+            <param name="callInvoker">The call invoker for service.</param>
+            <param name="serviceSettings">The service settings.</param>
+            <param name="serviceTemplate">The service template.</param>
+            <returns>The newly created service instance.</returns>
+        </member>
+        <member name="T:Google.Ads.Gax.Lib.AdsServiceContext`1">
+            <summary>
+            A context class to bind a service instance to its call settings, and the
+            <see cref="T:Google.Ads.Gax.Lib.AdsClient`1"/> instance that created it.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Lib.AdsServiceContext`1.Client">
+            <summary>
+            Gets or sets the client.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Lib.AdsServiceContext`1.Service">
+            <summary>
+            Gets or sets the service.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Lib.AdsServiceContext`1.CallSettings">
+            <summary>
+            Gets or sets the call settings.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Lib.AdsServiceContext`1.OperationsSettings">
+            <summary>
+            Gets the LRO settings.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Lib.AdsServiceContext`1.ChannelBase">
+            <summary>
+            Gets or sets the underlying grpc channel.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Lib.AdsServiceContext`1.OnResponseMetadataReceived(Google.Ads.Gax.Lib.IResponseMetadata)">
+            <summary>
+            Called when a response metadata is received.
+            </summary>
+            <param name="responseMetadata">The response metadata.</param>
+        </member>
+        <member name="T:Google.Ads.Gax.Lib.IResponseMetadata">
+            <summary>
+            Represents metadata in a response object.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Lib.IResponseMetadata.RequestId">
+            <summary>
+            Gets or sets the request ID.
+            </summary>
+        </member>
+        <member name="T:Google.Ads.Gax.Lib.MessageExtensions">
+            <summary>
+            Class to add extension methods to <see cref="T:Google.Protobuf.IMessage"/>
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Lib.MessageExtensions.IsEmpty(Google.Protobuf.IMessage)">
+            <summary>
+            Determines whether this instance is empty.
+            </summary>
+            <param name="message">The message.</param>
+            <returns>
+              <c>true</c> if the specified message is empty; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:Google.Ads.Gax.Lib.ServiceTemplate`3">
+            <summary>
+            Defines a service template.
+            </summary>
+            <typeparam name="TService">Type of the service.</typeparam>
+            <typeparam name="TServiceSetting">Type of the service setting.</typeparam>
+            <typeparam name="TConfig">The type of config.</typeparam>
+        </member>
+        <member name="M:Google.Ads.Gax.Lib.ServiceTemplate`3.#ctor(Google.Ads.Gax.Lib.ServiceTemplate{`0,`1,`2}.Create)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Lib.ServiceTemplate`3"/> class.
+            </summary>
+            <param name="createService">The service creation method.</param>
+        </member>
+        <member name="P:Google.Ads.Gax.Lib.ServiceTemplate`3.ServiceTypeName">
+            <summary>
+            Gets the name of the service type.
+            </summary>
+            <value>
+            The name of the service type.
+            </value>
+        </member>
+        <member name="T:Google.Ads.Gax.Lib.ServiceTemplate`3.Create">
+            <summary>
+            Method that creates the service instance.
+            </summary>
+            <param name="serviceName">Name of the service.</param>
+            <param name="callInvoker">The call invoker.</param>
+            <param name="settings">The settings.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Google.Ads.Gax.Lib.ServiceTemplate`3.CreateService">
+            <summary>
+            Gets the create service method.
+            </summary>
+        </member>
+        <member name="T:Google.Ads.Gax.Logging.ILogFormatter">
+            <summary>
+            Interface for formatting logs.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Logging.ILogFormatter.FormatRequestBody(System.Object)">
+            <summary>
+            Formats the request body.
+            </summary>
+            <param name="body">The request body.</param>
+            <returns>The formatted text.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Logging.ILogFormatter.FormatResponseBody(System.Object)">
+            <summary>
+            Formats the response body.
+            </summary>
+            <param name="body">The response body.</param>
+            <returns>The formatted text.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Logging.ILogFormatter.FormatRequestHeaders(Grpc.Core.Metadata)">
+            <summary>
+            Formats the request headers.
+            </summary>
+            <param name="header">The request header.</param>
+            <returns>The formatted text.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Logging.ILogFormatter.FormatResponseHeaders(Grpc.Core.Metadata)">
+            <summary>
+            Formats the response headers.
+            </summary>
+            <param name="header">The response header.</param>
+            <returns>The formatted text.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Logging.ILogFormatter.GetRequestId(Grpc.Core.Metadata,System.Object,Grpc.Core.RpcException)">
+            <summary>
+            Gets the request ID for logging.
+            </summary>
+            <param name="responseHeaders">The response headers.</param>
+            <param name="response">The response.</param>
+            <param name="exception">The exception, if available, null otherwise.</param>
+            <returns>The request ID.</returns>
+        </member>
+        <member name="T:Google.Ads.Gax.Logging.ITraceWriter">
+            <summary>
+            Interface for trace log writers.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Logging.ITraceWriter.WriteDetailedRequestLogs(Google.Ads.Gax.Logging.LogEntry)">
+            <summary>
+            Writes detailed logs.
+            </summary>
+            <param name="logEntry">The log entry.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Logging.ITraceWriter.WriteSummaryRequestLogs(Google.Ads.Gax.Logging.LogEntry)">
+            <summary>
+            Writes summary logs.
+            </summary>
+            <param name="logEntry">The log entry.</param>
+        </member>
+        <member name="T:Google.Ads.Gax.Logging.LogEntry">
+            <summary>
+            Represents an entry that gets written to the logs.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Logging.LogEntry.logFormatter">
+            <summary>
+            The log formatter.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Logging.LogEntry.Host">
+            <summary>
+            Gets or sets the host.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Logging.LogEntry.Method">
+            <summary>
+            Gets or sets the method.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Logging.LogEntry.Request">
+            <summary>
+            Gets or sets the request.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Logging.LogEntry.Response">
+            <summary>
+            Gets or sets the response.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Logging.LogEntry.Exception">
+            <summary>
+            Gets or sets the response.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Logging.LogEntry.PartialFailures">
+            <summary>
+            Gets or sets the partial failures text.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Logging.LogEntry.RequestHeaders">
+            <summary>
+            Gets or sets the request headers.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Logging.LogEntry.ResponseHeaders">
+            <summary>
+            Gets or sets the response headers.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Logging.LogEntry.IsFailure">
+            <summary>
+            The flag to indicate whether this request is a failure or not.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Logging.LogEntry.CustomerId">
+            <summary>
+            Gets or sets the customer ID for logging.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Logging.LogEntry.#ctor(Google.Ads.Gax.Logging.ILogFormatter)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Logging.LogEntry"/> class.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Logging.LogEntry.DetailedLog">
+            <summary>
+            Gets the detailed log.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Logging.LogEntry.SummaryLog">
+            <summary>
+            Gets the summary log.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Logging.LogEntry.DetailedRequestLog">
+            <summary>
+            Gets or sets the detailed request log.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Logging.LogEntry.DetailedResponseLog">
+            <summary>
+            Gets or sets the detailed response log.
+            </summary>
+        </member>
+        <member name="T:Google.Ads.Gax.Profiling.ProfiledMarshaller`1">
+            <summary>
+            A marshaller that wraps another marshaller and profiles it.
+            </summary>
+            <typeparam name="T">The type that the underlying marshaller can serialize or deserialize.
+            </typeparam>
+        </member>
+        <member name="F:Google.Ads.Gax.Profiling.ProfiledMarshaller`1.wrappedMarshaller">
+            <summary>
+            The marshaller that this instance wraps.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Profiling.ProfiledMarshaller`1.Marshaller">
+            <summary>
+            Gets the marshaller.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Profiling.ProfiledMarshaller`1.timeProfile">
+            <summary>
+            The time profile for recording time taken by the serialization and deserialization
+            process.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfiledMarshaller`1.#ctor(Grpc.Core.Marshaller{`0},Google.Ads.Gax.Profiling.TimeProfile)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Profiling.ProfiledMarshaller`1"/> class.
+            </summary>
+            <param name="marshaller">The marshaller.</param>
+            <param name="timeProfile">The time profile.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfiledMarshaller`1.Wrap(Grpc.Core.Marshaller{`0})">
+            <summary>
+            Wraps the specified marshaller.
+            </summary>
+            <param name="marshaller">The marshaller.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfiledMarshaller`1.DeserializeWithContext(Grpc.Core.DeserializationContext)">
+            <summary>
+            Deserializes the specified object.
+            </summary>
+            <param name="ctx">The deserialization context.</param>
+            <returns>The deserialized object.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfiledMarshaller`1.Deserialize(System.Byte[])">
+            <summary>
+            Deserializes the specified object.
+            </summary>
+            <param name="arg">The serialized bytes.</param>
+            <returns>The deserialized object.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfiledMarshaller`1.SerializeWithContext(`0,Grpc.Core.SerializationContext)">
+            <summary>
+            Serializes the specified object.
+            </summary>
+            <param name="arg">The object to serialize.</param>
+            <param name="ctx">The serialization context.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfiledMarshaller`1.Serialize(`0)">
+            <summary>
+            Serializes the specified object.
+            </summary>
+            <param name="arg">The object to serialize.</param>
+            <returns>The serialized bytes.</returns>
+        </member>
+        <member name="T:Google.Ads.Gax.Profiling.ProfiledMethod`2">
+            <summary>
+            A method that wraps over another method for profiling purposes.
+            </summary>
+            <typeparam name="TRequest">The type of the request.</typeparam>
+            <typeparam name="TResponse">The type of the response.</typeparam>
+        </member>
+        <member name="F:Google.Ads.Gax.Profiling.ProfiledMethod`2.requestMarshaller">
+            <summary>
+            The profiled request marshaller.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Profiling.ProfiledMethod`2.responseMarshaller">
+            <summary>
+            The profiled response marshaller.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Profiling.ProfiledMethod`2.wrappedMethod">
+            <summary>
+            The wrapped method.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Profiling.ProfiledMethod`2.timeProfile">
+            <summary>
+            The time profile for recording time taken by the serialization and deserialization
+            process, as well as the method details.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Profiling.ProfiledMethod`2.Method">
+            <summary>
+            Gets the method.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfiledMethod`2.#ctor(Grpc.Core.Method{`0,`1},System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Profiling.ProfiledMethod`2"/>
+            class.
+            </summary>
+            <param name="method">The method to wrap over.</param>
+            <param name="enableProfiling">A flag to determine whether to enable profiling or not.
+            </param>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfiledMethod`2.SetStatusChecker(System.Func{Grpc.Core.Status})">
+            <summary>
+            Sets the status checker, that can be used to check if the method call is complete
+            or not.
+            </summary>
+            <param name="statusCallback">The status callback.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfiledMethod`2.Wrap(Grpc.Core.Method{`0,`1})">
+            <summary>
+            Wraps the specified method.
+            </summary>
+            <param name="method">The method to be wrapped.</param>
+        </member>
+        <member name="T:Google.Ads.Gax.Profiling.ProfileTracker">
+            <summary>
+            A class to keep track of profiles.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Profiling.ProfileTracker.instance">
+            <summary>
+            The singleton instance.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfileTracker.#ctor">
+            <summary>
+            Prevents a default instance of the <see cref="T:Google.Ads.Gax.Profiling.ProfileTracker"/> class
+            from being created.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Profiling.ProfileTracker.syncLock">
+            <summary>
+            The synchronize lock.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Profiling.ProfileTracker.profiles">
+            <summary>
+            The profiles tracked by this instance.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Profiling.ProfileTracker.Instance">
+            <summary>
+            Gets the singleton instance.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfileTracker.AddProfile(Google.Ads.Gax.Profiling.TimeProfile)">
+            <summary>
+            Adds a profile to track.
+            </summary>
+            <param name="profile">The profile to track.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfileTracker.DebugString">
+            <summary>
+            Gets a debug string.
+            </summary>
+            <returns>The Debug string.</returns>
+        </member>
+        <member name="T:Google.Ads.Gax.Profiling.ProfilingCallInvoker">
+            <summary>
+            A call invoker that profiles the call timing.
+            </summary>
+            <seealso cref="T:Grpc.Core.CallInvoker" />
+        </member>
+        <member name="F:Google.Ads.Gax.Profiling.ProfilingCallInvoker.invoker">
+            <summary>
+            The invoker that this instance wraps.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Profiling.ProfilingCallInvoker.config">
+            <summary>
+            The configuration.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfilingCallInvoker.#ctor(Grpc.Core.CallInvoker,Google.Ads.Gax.Config.AdsConfig)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Profiling.ProfilingCallInvoker"/> class.
+            </summary>
+            <param name="invoker">The invoker.</param>
+            <param name="config">The library configuration.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfilingCallInvoker.AsyncClientStreamingCall``2(Grpc.Core.Method{``0,``1},System.String,Grpc.Core.CallOptions)">
+            <summary>
+            Invokes a client streaming call asynchronously.
+            In client streaming scenario, client sends a stream of requests and server responds
+            with a single response.
+            </summary>
+            <typeparam name="TRequest">Request message type for this call.</typeparam>
+            <typeparam name="TResponse">Request message type for this call.</typeparam>
+            <param name="method">The method details such as service and method names, marshallers
+            for request and response, etc.</param>
+            <param name="host">The host to which the call is made.</param>
+            <param name="options">The call options.</param>
+            <returns>The client streaming call instance.</returns>
+            <remarks>This method is not profiled and is passthru.</remarks>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfilingCallInvoker.AsyncDuplexStreamingCall``2(Grpc.Core.Method{``0,``1},System.String,Grpc.Core.CallOptions)">
+            <summary>
+            Invokes a duplex streaming call asynchronously.
+            In duplex streaming scenario, client sends a stream of requests and server responds
+            with a stream of responses. The response stream is completely independent and both side
+            can be sending messages at the same time.
+            </summary>
+            <typeparam name="TRequest">Request message type for this call.</typeparam>
+            <typeparam name="TResponse">Request message type for this call.</typeparam>
+            <param name="method">The method details such as service and method names, marshallers
+            for request and response, etc.</param>
+            <param name="host">The host to which the call is made.</param>
+            <param name="options">The call options.</param>
+            <returns>The duplex streaming call instance.</returns>
+            <remarks>This method is not profiled and is passthru.</remarks>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfilingCallInvoker.AsyncServerStreamingCall``2(Grpc.Core.Method{``0,``1},System.String,Grpc.Core.CallOptions,``0)">
+            <summary>
+            Invokes a server streaming call asynchronously.
+            In server streaming scenario, client sends on request and server responds with a
+            stream of responses.
+            </summary>
+            <typeparam name="TRequest">Request message type for this call.</typeparam>
+            <typeparam name="TResponse">Request message type for this call.</typeparam>
+            <param name="method">The method details such as service and method names, marshallers
+            for request and response, etc.</param>
+            <param name="host">The host to which the call is made.</param>
+            <param name="options">The call options.</param>
+            <param name="request">The request object.</param>
+            <returns>The server streaming call instance.</returns>
+            <remarks>This method is profiled.</remarks>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfilingCallInvoker.AsyncUnaryCall``2(Grpc.Core.Method{``0,``1},System.String,Grpc.Core.CallOptions,``0)">
+            <summary>
+            Invokes a simple remote call asynchronously.
+            </summary>
+            <typeparam name="TRequest">Request message type for this call.</typeparam>
+            <typeparam name="TResponse">Request message type for this call.</typeparam>
+            <param name="method">The method details such as service and method names, marshallers
+            for request and response, etc.</param>
+            <param name="host">The host to which the call is made.</param>
+            <param name="options">The call options.</param>
+            <param name="request">The request object.</param>
+            <returns>The async unary call instance.</returns>
+            <remarks>This method is profiled.</remarks>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.ProfilingCallInvoker.BlockingUnaryCall``2(Grpc.Core.Method{``0,``1},System.String,Grpc.Core.CallOptions,``0)">
+            <summary>
+            Invokes a simple remote call in a blocking fashion.
+            </summary>
+            <typeparam name="TRequest">Request message type for this call.</typeparam>
+            <typeparam name="TResponse">Request message type for this call.</typeparam>
+            <param name="method">The method details such as service and method names, marshallers
+            for request and response, etc.</param>
+            <param name="host">The host to which the call is made.</param>
+            <param name="options">The call options.</param>
+            <param name="request">The request object.</param>
+            <returns>The response.</returns>
+            <remarks>This method is not profiled and is passthru.</remarks>
+        </member>
+        <member name="T:Google.Ads.Gax.Profiling.TimeInterval">
+            <summary>
+            Represents an interval of time.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Profiling.TimeInterval.Start">
+            <summary>
+            Gets or sets the start time.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Profiling.TimeInterval.End">
+            <summary>
+            Gets or sets the end.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Profiling.TimeInterval.Duration">
+            <summary>
+            Gets the duration of ther interval.
+            </summary>
+        </member>
+        <member name="T:Google.Ads.Gax.Profiling.TimeProfile">
+            <summary>
+            Represents a time profile.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Profiling.TimeProfile.statusChecker">
+            <summary>
+            The status checker, to check if the underlying API call is complete.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Profiling.TimeProfile.getTrailers">
+            <summary>
+            The trailign metadata checker, to retrieve the request ID.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Profiling.TimeProfile.ID">
+            <summary>
+            ID of this time profile.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.TimeProfile.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data
+            structures like a hash table.
+            </returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.TimeProfile.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="p">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance;
+              otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="P:Google.Ads.Gax.Profiling.TimeProfile.ServiceName">
+            <summary>
+            Gets or sets the name of the service.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Profiling.TimeProfile.MethodName">
+            <summary>
+            Gets or sets the name of the method.
+            </summary>
+            <value>
+            The name of the method.
+            </value>
+        </member>
+        <member name="P:Google.Ads.Gax.Profiling.TimeProfile.Serialize">
+            <summary>
+            Gets the time taken for the serialization portion of this profile.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Profiling.TimeProfile.Deserialize">
+            <summary>
+            Gets the time taken for the deserialization portion of this profile.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Profiling.TimeProfile.RPCAndNetwork">
+            <summary>
+            Gets the time taken for the first RPC and Network overhead. You can subtract the time
+            taken for the RPC from the server logs.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Profiling.TimeProfile.PagingNetworkOverhead">
+            <summary>
+            Gets the serialize span.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Profiling.TimeProfile.SerializeOverhead">
+            <summary>
+            Gets the serialization overhead.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Profiling.TimeProfile.DeserializeOverhead">
+            <summary>
+            Gets the deserialization overhead.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Profiling.TimeProfile.E2E">
+            <summary>
+            Gets the time taken for the End-To-End call.
+            </summary>
+            <remarks>This is calculated as End time of last Deserialize entry - Start time of
+            Serialize Entry.</remarks>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.TimeProfile.SetStatusChecker(System.Func{Grpc.Core.Status})">
+            <summary>
+            Sets the status checker.
+            </summary>
+            <param name="statusChecker">The status checker.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.TimeProfile.SetMetadataChecker(System.Func{Grpc.Core.Metadata})">
+            <summary>
+            Sets the metadata checker.
+            </summary>
+            <param name="getTrailers">The trailing metdata checker.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.TimeProfile.GetRequestId">
+            <summary>
+            Gets the request identifier associated with this API call.
+            </summary>
+            <returns>The request ID.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.TimeProfile.WaitForCompletion">
+            <summary>
+            Wait for the API call to complete.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.TimeProfile.GetDebugString">
+            <summary>
+            Gets a debug string.
+            </summary>
+            <returns>
+            A Debug string.
+            </returns>
+        </member>
+        <member name="T:Google.Ads.Gax.Profiling.Timer">
+            <summary>
+            Utility class for measuring execution times.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Profiling.Timer.Benchmark(System.Action)">
+            <summary>
+            Benchmarks the specified action.
+            </summary>
+            <param name="action">The action to be benchmarked.</param>
+            <returns>Time taken as an interval.</returns>
+        </member>
+        <member name="T:Google.Ads.Gax.Util.AdsHttpClientFactory">
+            <summary>
+            An <see cref="T:Google.Apis.Http.HttpClientFactory"/> implementation that allows setting proxy server.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Util.AdsHttpClientFactory.config">
+            <summary>
+            The configuration class for obtaining proxy instance.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.AdsHttpClientFactory.#ctor(Google.Ads.Gax.Config.AdsConfig)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Google.Ads.Gax.Util.AdsHttpClientFactory"/> class.
+            </summary>
+            <param name="config">The configuration instance.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.AdsHttpClientFactory.CreateHandler(Google.Apis.Http.CreateHttpClientArgs)">
+            <summary>
+            Creates a HTTP message handler. Override this method to mock a message handler.
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Google.Ads.Gax.Util.CollectionUtilities">
+            <summary>
+            Provides utility methods for working with collections.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.CollectionUtilities.GetValueOrDefault``2(System.Collections.Generic.Dictionary{``0,``1},``0)">
+            <summary>
+            Attempts to retrieve a value associated with the specified key from the specified
+            Dictionary.</summary>
+            <param name="dictionary">The dictionary to query.</param>
+            <param name="key">The key to retrieve a value for.</param>
+            <returns>
+            The value associated with the spcified key, or the default value for that type if none
+            could be found.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.CollectionUtilities.GetValueOrDefault``2(System.Collections.Generic.Dictionary{``0,``1},``0,``1)">
+            <summary>
+            Attempts to retrieve a value associated with the specified key from the specified
+            Dictionary.</summary>
+            <param name="dictionary">The dictionary to query.</param>
+            <param name="key">The key to retrieve a value for.</param>
+            <param name="defaultValue">The value to return if none could be found.</param>
+            <returns>
+            The value associated with the spcified key, or defaultValue if none could be found.
+            </returns>
+        </member>
+        <member name="T:Google.Ads.Gax.Util.FieldMasks">
+            <summary>
+            Utility methods for working with field paths.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.FieldMasks.AllSetFieldsOf``1(Google.Protobuf.IMessage{``0})">
+            <summary>
+            Constructs a fieldmask object that captures the list of all set fields of an object.
+            </summary>
+            <param name="modified">The modified object.</param>
+            <returns>A fieldmask object that captures the list of all set fields.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.FieldMasks.FromChanges``1(Google.Protobuf.IMessage{``0},Google.Protobuf.IMessage{``0})">
+            <summary>
+            Compares two messages, constructing a field mask to express the difference between them.
+            </summary>
+            <param name="modified">The modified object.</param>
+            <param name="original">The original object.</param>
+            <returns>A fieldmask object that captures the changes.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.FieldMasks.CompareField(Google.Protobuf.WellKnownTypes.FieldMask,System.String,Google.Protobuf.IMessage,Google.Protobuf.IMessage)">
+            <summary>
+            Compares a given field for two messages, and captures the differences between them.
+            </summary>
+            <param name="mask">The fieldmask to store the differences to.</param>
+            <param name="fieldName">The field name to compare.</param>
+            <param name="original">The original value of the field.</param>
+            <param name="modified">The modified value of the field.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.FieldMasks.GetFieldValue(System.String,Google.Protobuf.IMessage)">
+            <summary>
+            Gets the field value.
+            </summary>
+            <param name="fieldMaskPath">The field mask path.</param>
+            <param name="entity">The entity to retrieve values from.</param>
+            <returns>The </returns>
+            <exception cref="T:System.ArgumentException">Thrown if the path cannot be recursed further.
+            </exception>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.FieldMasks.GetFullFieldName(System.String,Google.Protobuf.Reflection.FieldDescriptor)">
+            <summary>
+            Gets the full name of the field.
+            </summary>
+            <param name="parentFieldName">The parent field name.</param>
+            <param name="field">The field for which full name should be evaluated.</param>
+            <returns>The full name of the field.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.FieldMasks.AddNewFields(Google.Protobuf.WellKnownTypes.FieldMask,System.String,Google.Protobuf.IMessage)">
+            <summary>
+            Recursively adds field names for a new message. Repeated fields, primitive fields and
+            unpopulated single message fields are included just by name; populated single message
+            fields are processed recursively, only including leaf nodes.
+            </summary>
+            <param name="fieldName">The current field.</param>
+            <param name="mask">The fieldmask that keeps track of changes.</param>
+            <param name="message">The message for which new fieldmasks are generated.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.FieldMasks.IsBasicType(Google.Protobuf.Reflection.FieldType)">
+            <summary>
+            Determines whether a field is basic type or not.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.FieldMasks.GetDefaultValue(Google.Protobuf.Reflection.FieldType)">
+            <summary>
+            Gets the default value for a type.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>The default value.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.FieldMasks.IsWrapperType(Google.Protobuf.Reflection.MessageDescriptor)">
+            <summary>
+            Determines whether the specified message descriptor is a wrapper type or not.
+            </summary>
+            <param name="descriptor">The message descriptor.</param>
+            <returns>True if the message descriptor is a wrapper type, false otherwise.</returns>
+        </member>
+        <member name="T:Google.Ads.Gax.Util.HttpUtilities">
+            <summary>
+            Utility class for various HTTP tasks.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.HttpUtilities.BuildRequest(System.String,System.String,Google.Ads.Gax.Config.AdsConfig)">
+            <summary>
+            Builds an HTTP request with a specified method.
+            </summary>
+            <param name="url">The URL.</param>
+            <param name="method">The HTTP method.</param>
+            <param name="config">The configuration instance for customizing the
+            connection settings.</param>
+            <returns>The web request for making HTTP call.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="config"/>
+            is null.</exception>
+        </member>
+        <member name="T:Google.Ads.Gax.Util.MediaUtilities">
+            <summary>
+            Provides utility methods for handling media resources.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.MediaUtilities.GetAssetDataFromUrl(System.Uri,Google.Ads.Gax.Config.AdsConfig)">
+            <summary>
+            Retrieves an asset from the web given its URL.
+            </summary>
+            <param name="assetUrl">The URL of the asset to be retrieved.</param>
+            <param name="config">The application configuration instance.</param>
+            <returns>Asset data, as an array of bytes.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if
+            <paramref name="assetUrl"/> or <paramref name="config"/>is null.
+            </exception>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.MediaUtilities.GetAssetDataFromUrlAsync(System.Uri,Google.Ads.Gax.Config.AdsConfig)">
+            <summary>
+            Asynchronously retrieves an asset from the web given its URL.
+            </summary>
+            <param name="assetUrl">The URL of the asset to be retrieved.</param>
+            <param name="config">The application configuration instance.</param>
+            <returns>Asset data, as an array of bytes.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if
+            <paramref name="assetUrl"/> or <paramref name="config"/>is null.
+            </exception>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.MediaUtilities.GetAssetDataFromUrl(System.String,Google.Ads.Gax.Config.AdsConfig)">
+            <summary>
+            Retrieves an asset from the web given its URL.
+            </summary>
+            <param name="assetUrl">The URL of the asset to be retrieved.</param>
+            <param name="config">The application configuration instance.</param>
+            <returns>Asset data, as an array of bytes.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if
+            <paramref name="assetUrl"/> or <paramref name="config" /> is null.
+            </exception>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.MediaUtilities.GetAssetDataFromUrlAsync(System.String,Google.Ads.Gax.Config.AdsConfig)">
+            <summary>
+            Asynchronously retrieves an asset from the web given its URL.
+            </summary>
+            <param name="assetUrl">The URL of the asset to be retrieved.</param>
+            <param name="config">The application configuration instance.</param>
+            <returns>Asset data, as an array of bytes.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if
+            <paramref name="assetUrl"/> or <paramref name="config" /> is null.
+            </exception>
+        </member>
+        <member name="T:Google.Ads.Gax.Util.ProtobufUtilities">
+            <summary>
+            Utility methods for working with protobuf objects.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.ProtobufUtilities.GetOriginalEnumFieldName(System.Object)">
+            <summary>
+            Gets the original name of an enum field in case it was renamed for
+            name style conventions.
+            </summary>
+            <returns>The original name, or an empty string if the name cannot be retrieved.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.ProtobufUtilities.Parse``1(System.Byte[])">
+            <summary>
+            Parses the failure.
+            </summary>
+            <typeparam name="U"></typeparam>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.ProtobufUtilities.GetBinarySerializationKeyName``1">
+            <summary>
+            Gets the metadata key name when a type is serialized as bytes.
+            </summary>
+            <typeparam name="U">The type.</typeparam>
+            <returns>The key name.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Util.ProtobufUtilities.GetEntry(Grpc.Core.Metadata,System.String)">
+            <summary>
+            Gets the metadata entry by key.
+            </summary>
+            <param name="metadata">The metadata.</param>
+            <param name="key">The key.</param>
+            <returns>The entry.</returns>
+        </member>
+        <member name="T:Google.Ads.Gax.Examples.ExampleBase">
+            <summary>
+            This abstract class represents a code example.
+            </summary>
+        </member>
+        <member name="P:Google.Ads.Gax.Examples.ExampleBase.Description">
+            <summary>
+            Returns a description about the code example.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Examples.ExampleBase.GetVersionedName(System.Type)">
+            <summary>
+            Gets the name of the code example, including the version name. E.g. V5.GetCampaigns.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Examples.ExampleBase.GetName(System.Type)">
+            <summary>
+            Gets the name of the code example, without the version name. E.g. GetCampaigns.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Examples.ExampleBase.GetUsage(System.Type)">
+            <summary>
+            Gets the usage of a code example.
+            </summary>
+            <param name="type">The type of the code example.</param>
+            <returns>The usage string.</returns>
+        </member>
+        <member name="T:Google.Ads.Gax.Examples.ExampleRunner">
+            <summary>
+            Helper class for running code examples.
+            </summary>
+        </member>
+        <member name="F:Google.Ads.Gax.Examples.ExampleRunner.codeExampleMap">
+            <summary>
+            A map to hold the code examples to be executed.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Examples.ExampleRunner.LoadCodeExamples(System.Reflection.Assembly,System.Type[])">
+            <summary>
+            Finds the code examples in a given assembly.
+            </summary>
+            <param name="assembly">The assembly to search for.</param>
+            <param name="typesToExclude">List of types to exclude.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Examples.ExampleRunner.LoadCodeExamples(System.Reflection.Assembly)">
+            <summary>
+            Finds the code examples in a given assembly.
+            </summary>
+            <param name="assembly">The assembly to search for.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Examples.ExampleRunner.PrintAvailableExamples">
+            <summary>
+            Prints the list of available code examples.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Examples.ExampleRunner.GetCodeExampleType(System.String)">
+            <summary>
+            Returns the system type for a code example name
+            </summary>
+            <param name="exampleName">Name of the example.</param>
+        </member>
+        <member name="M:Google.Ads.Gax.Examples.ExampleRunner.Run(System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Runs the specified example name.
+            </summary>
+            <param name="exampleName">Name of the example.</param>
+            <param name="args">The arguments.</param>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Thrown if the example with the specified name
+            is not found.</exception>
+        </member>
+        <member name="M:Google.Ads.Gax.Examples.ExampleRunner.GetExecutableName">
+            <summary>
+            Gets the name of the executable.
+            </summary>
+            <returns>The name of the executable.</returns>
+        </member>
+        <member name="T:Google.Ads.Gax.Examples.ExampleUtilities">
+            <summary>
+            Utility class for assisting in running code examples.
+            </summary>
+        </member>
+        <member name="M:Google.Ads.Gax.Examples.ExampleUtilities.GetRandomString">
+            <summary>
+            Gets a random string. Useful for generating unique names for campaigns,
+            ad groups, etc.
+            </summary>
+            <returns>The current timestamp as a string.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Examples.ExampleUtilities.GetShortRandomString">
+            <summary>
+            Gets a random string. Useful for generating unique names for campaigns,
+            ad groups, etc.
+            </summary>
+            <returns>The current timestamp as a string.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Examples.ExampleUtilities.FormatException(System.Exception)">
+            <summary>
+            Formats the exception as a printable message.
+            </summary>
+            <param name="ex">The exception.</param>
+            <returns>The formatted exception string.</returns>
+        </member>
+        <member name="M:Google.Ads.Gax.Examples.ExampleUtilities.ParseCommandLine``1(System.String[])">
+            <summary>
+            Parses the command line.
+            </summary>
+            <typeparam name="T">The type of options.</typeparam>
+            <param name="args">The command line arguments.</param>
+            <returns>The parsed options.</returns>
+        </member>
+        <member name="T:Google.Ads.Gax.Examples.OptionsBase">
+            <summary>
+            Base class for code example options class.
+            </summary>
+        </member>
+    </members>
+</doc>
